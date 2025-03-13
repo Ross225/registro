@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Ejemplo de Estructura HTML5</title>
+    <style>
+.alinear-derecha {
+     float: right; /* para imagen derecha */
+             margin: 0px; /* Espacio a la derecha de la barra de navegación */ 
+}
+ 
+        /* Estilo para el encabezado */
+        header {
+           
+    background-color: #19a4b9;
+            color: rgb(16, 16, 16); /* Texto blanco */
+            padding: 20px; /* Espaciado interno */
+            text-align: center; /* Centrar el texto */
+        }
+input[type="submit"] {
+background-color: #0a1ef7;
+color: white;
+font-size 20px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+input[type="submit"]:hover {
+background-color: #5ff7fa; /*nuevo color*/
+color: black;
+}
+        /* Estilo para la barra de navegación */
+        nav {
+            background-color: #d1d1d1; /* Fondo gris */
+            color: red;
+padding: 0px;
+text-align: center; /* Centrar el texto */
+           <!-- width: 900px; /* Ancho de la barra de navegación */ -->
+         
+        }
+
+        
+
+        /* Estilo para el bloque principal (section) */
+        section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        article {
+            width: 80%; /* el artículo1 ocupa el 80% del ancho */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        article h2 {
+            color: green; /* Títulos en verde */
+        }
+
+        /* Estilo para la barra lateral (aside) */
+        aside {
+            background-color: #a3892c;
+text-align: center;
+            padding: 15px;
+            margin: 20px;
+            <!--border-left: 3px solid green;-->
+        }
+
+        /* Estilo para el pie de página (footer) */
+        footer {
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Texto blanco */
+            text-align: center;
+            padding: 10px; <hgroup>
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            
+<img src=GOBIERNO2.jpg height=10% width=20% class="alinear-derecha">   
+        <h1>PILARES</h1>
+        <p>Sistema Integral de Registro de Informacion</p>
+<p> </p>
+        </hgroup>
+    </header>
+
+   <!-- <nav> en esta seccion no lleva NAV¿?
+          
+  
+        </nav>-->
+
+    <section>
+     
+        <article id="articulo1">
+           <h2>Registro</h2>  
+              <img src=gob3.jpg height=80% width=100% >   
+        </article>
+
+        <article id="articulo2">
+           
+          
+<!--registro con formato completo-->
+<form>
+<fieldset>
+<legend>Informacion personal del usuario</legend>
+<label>Introduce tu nombre completo</label><br>
+<input type="text" name="name"><br>
+<label>Cuantos a#os tienes cumplidos?</label><br>
+<input type="number" name="edad" min="5" max="99" required><br>
+<label>Introduce tu email</label><br>
+<input type="email" name="email"><br>
+<label>Introduce tu contrase#a</label><br>
+<input type="password" name="pass"><br>
+<label>Confirma tu contrase#a</label><br>
+<input type="password" name="pass"><br>
+<br><label>Genero</label><br>
+<input type="radio" id="gender" name="gender" value="male"/>Masculino
+<input type="radio" id="gender" name="gender" value="female"/>Femenino
+<input type="radio" id="gender" name="gender" value="other"/>Otro <br/>
+<br>Introduce tu direccion:<br><textarea></textarea>
+<br> 
+<input type="submit" value="ENVIAR">
+</form>
+        </article>
+    </section>
+
+    <aside>
+        <h3>PILARES - 2022 - Politicas de privacidad</h3>
+        <p>Este programa es de caracter publico, no es patrocinado ni promovido por partido politico alguno y sus recursos provienen de los impuestos que pagan todos los contribuyentes. Esta prohibido el uso de este programa con fines politicos, electorales, de lucro y otros distintos a los establecidos. Quien haga uso indebido de los recursos de este programa en la Ciudad de Mexico, sera sancionado de acuerdo con la ley aplicable y ante la autoridad competente.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Tu Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
